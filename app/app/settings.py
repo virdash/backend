@@ -25,7 +25,11 @@ SECRET_KEY = '0p%b$s&#&rw79bs4iiag1v!^06o0!n)z&&**ag163y2z)k@m!4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://virdash.com',
+    'http://34.70.11.119',
+    'https://34.70.11.119'
+    ]
 
 
 # Application definition
