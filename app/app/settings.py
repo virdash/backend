@@ -26,9 +26,10 @@ SECRET_KEY = '0p%b$s&#&rw79bs4iiag1v!^06o0!n)z&&**ag163y2z)k@m!4'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'http://virdash.com',
     'https://virdash.com',
     'http://34.70.11.119',
-    'https://34.70.11.119'
+    'https://34.70.11.119',
     ]
 
 
@@ -133,12 +134,14 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:4200',
+    'http://virdash.com',
     'https://virdash.com',
     'http://34.70.11.119',
     'https://34.70.11.119'
 ]
 CORS_ORIGIN_REGEX_WHITELIST = [
     'http://localhost:4200',
+    'http://virdash.com',
     'https://virdash.com',
     'http://34.70.11.119',
     'https://34.70.11.119'
