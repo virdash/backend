@@ -1,8 +1,6 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-# from asgiref.sync import sync_to_async
-from asgiref.sync import async_to_sync
 
 import tweepy
 import random
