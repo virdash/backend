@@ -129,13 +129,13 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:4200',
-    'https://virdash.com/',
-    'http://104.197.140.166/',
-    'https://104.197.140.166/'
+    'https://virdash.com',
+    'http://34.70.11.119',
+    'https://34.70.11.119'
 ]
 CORS_ORIGIN_REGEX_WHITELIST = [
     'http://localhost:4200',
-    'https://virdash.com/',
-    'http://104.197.140.166/',
-    'https://104.197.140.166/'
+    'https://virdash.com',
+    'http://34.70.11.119',
+    'https://34.70.11.119'
 ]
