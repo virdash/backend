@@ -127,9 +127,13 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ORIGIN_WHITELIST = [
-#     'http://localhost:4200',
-# ]
-# CORS_ORIGIN_REGEX_WHITELIST = [
-#     'http://localhost:4200',
-# ]
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:4200',
+    'https://virdash.com/',
+    'https://104.197.140.166/'
+]
+CORS_ORIGIN_REGEX_WHITELIST = [
+    'http://localhost:4200',
+    'https://virdash.com/',
+    'https://104.197.140.166/'
+]
