@@ -1,13 +1,30 @@
+import os
+import environ
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-
 import tweepy
 import random
-from env.keys import consumer_key, consumer_secret, access_token, access_token_secret
 
 from core.models import Tweet
 from tweets.serializers import TweetSerializer
+
+
+env = environ.Env()
+
+# Set the project base directory
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Take environment variables from .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+# False if not in os.environ because of casting above
+consumer_key = env('CUSTOMER_KEY')
+consumer_secret = env('CUSTOMER_SECRET')
+access_token = env('ACCESS_TOKEN')
+access_token_secret = env('ACCESS_TOKEN_SECRET')
+
+
 
 def get_tweet():
   """
