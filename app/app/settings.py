@@ -131,9 +131,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://virdash.com",
-    "https://virdash.com",
-    "http://localhost:4200",
-    "http://127.0.0.1:4200",
+# CORS_ALLOWED_ORIGINS = [
+#     "http://virdash.com",
+#     "https://virdash.com",
+#     "http://localhost:4200",
+#     "http://127.0.0.1:4200",
+# ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:4200',
+    'http://virdash.com',
+    'https://virdash.com',
+]
+CORS_ORIGIN_REGEX_WHITELIST = [
+    'http://localhost:4200',
+    'http://virdash.com',
+    'https://virdash.com',
 ]
