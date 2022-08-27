@@ -27,11 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'virdash.com',
-    'http://virdash.com',
-    'https://virdash.com',
-    '34.70.11.119',
-    'http://34.70.11.119',
-    'https://34.70.11.119',
+    '52.23.196.20',
     '127.0.0.1',
     'localhost'
     ]
